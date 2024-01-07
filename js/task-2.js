@@ -1,9 +1,9 @@
 function calcAverageCalories(days) {
-  totalSummOfColories = 0;
+  let totalSummOfColories = 0;
   if (days.length < 1) {
     return totalSummOfColories;
   }
-  for (weekday of days) {
+  for (const weekday of days) {
     totalSummOfColories += weekday.calories;
   }
   return totalSummOfColories / days.length;
